@@ -1,0 +1,12 @@
+#torch==1.8.1
+#torchvision=0.9.1
+cupy-cuda102
+#cudnn>=7.6.5
+easydict>=1.9
+opencv-python>=4.5.0
+timm>=0.4.10
+scipy>=1.7.0
+scipy
+tqdm>=4.40.0
+tensorboardX>=2.2
+protobuf==3.20.1

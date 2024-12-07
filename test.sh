@@ -1,0 +1,16 @@
+CUDA_VISIBLE_DEVICES=0 python eval.py -d=0 -e=350 &
+CUDA_VISIBLE_DEVICES=0 python eval.py -d=0 -e=360 &
+CUDA_VISIBLE_DEVICES=0 python eval.py -d=0 -e=370 &
+CUDA_VISIBLE_DEVICES=0 python eval.py -d=0 -e=380 &
+CUDA_VISIBLE_DEVICES=1 python eval.py -d=0 -e=390 &
+CUDA_VISIBLE_DEVICES=1 python eval.py -d=0 -e=400 &
+CUDA_VISIBLE_DEVICES=1 python eval.py -d=0 -e=410 &
+CUDA_VISIBLE_DEVICES=1 python eval.py -d=0 -e=420 &
+CUDA_VISIBLE_DEVICES=2 python eval.py -d=0 -e=430 &
+CUDA_VISIBLE_DEVICES=2 python eval.py -d=0 -e=440 &
+CUDA_VISIBLE_DEVICES=2 python eval.py -d=0 -e=450 &
+CUDA_VISIBLE_DEVICES=2 python eval.py -d=0 -e=460 &
+CUDA_VISIBLE_DEVICES=3 python eval.py -d=0 -e=470 &
+CUDA_VISIBLE_DEVICES=3 python eval.py -d=0 -e=480 &
+CUDA_VISIBLE_DEVICES=3 python eval.py -d=0 -e=490 &
+CUDA_VISIBLE_DEVICES=3 python eval.py -d=0 -e=500 &
