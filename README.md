@@ -67,18 +67,18 @@ For preparation of other datasets, please refer to the original websites:
 
     Download the pre-trained segformer and swintransformer here [pretrained segformer](https://drive.google.com/drive/folders/10XgSW8f7ghRs9fJ0dE-EV8G2E_guVsT5?usp=sharing).(Thanks for CMX's sharing of backbone weights)
 
-   Orgnize the pretrained backbones in the following structure:
-```shell
-<pretrained>
-|-- <segformer>
-    |-- <name1>.pth
-    |-- <name2>.pth
-    ...
-|-- <swintransformer>
-    |-- <name1>.pth
-    |-- <name2>.pth
-    ...
-```
+   Organize the pre-trained backbones in the following structure:
+    ```shell
+    <pretrained>
+    |-- <segformer>
+        |-- <name1>.pth
+        |-- <name2>.pth
+        ...
+    |-- <swintransformer>
+        |-- <name1>.pth
+        |-- <name2>.pth
+        ...
+    ```
 
 3. Config
 
