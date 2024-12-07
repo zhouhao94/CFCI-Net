@@ -1,4 +1,4 @@
-# RGBD_Semantic_Segmentation
+# RGBD Semantic Segmentation Method
 
 ![Example segmentation](segmentation.jpg?raw=true "Example segmentation")
 
@@ -56,18 +56,18 @@ Our work uses HHA format as the input of depth information; the generation of HH
 For preparation of other datasets, please refer to the original websites:
 - [NYU Depth V2](https://cs.nyu.edu/~silberman/datasets/nyu_depth_v2.html)
 - [SUN-RGBD](https://rgbd.cs.princeton.edu/)
-- [2D-3D-S](http://www.scan-net.org/)
+- [2D-3D-S](http://3Dsemantics.stanford.edu/)
 
 ### Train
 1. Pretrain weights:
 
-    Download the pretrained segformer here [pretrained segformer](https://drive.google.com/drive/folders/10XgSW8f7ghRs9fJ0dE-EV8G2E_guVsT5?usp=sharing).
+    Download the pretrained segformer and swin transformer here [pretrained segformer](https://drive.google.com/drive/folders/10XgSW8f7ghRs9fJ0dE-EV8G2E_guVsT5?usp=sharing).(Thanks for CMX's sharing of backbone weights)
 
-2. Config
+3. Config
 
     Edit config file in `configs.py`, including dataset and network settings.
 
-3. Run multi GPU distributed training:
+4. Run multi GPU distributed training:
     ```shell
     $ CUDA_VISIBLE_DEVICES="GPU IDs" python -m torch.distributed.launch --nproc_per_node="GPU numbers you want to use" train.py
     ```
@@ -84,7 +84,7 @@ If you want to use multi GPUs please specify multiple Device IDs (0,1,2...).
 
 
 ## Result
-We offer the pre-trained weights on different RGBX datasets (Some weights are not available yet. Due to the difference of training platforms, these weights may not be correctly loaded):
+We offer the test results of the proposed method on different RGBD datasets:
 
 ### NYU-V2(40 categories)
 | Architecture | Backbone | mIOU(SS) | mIOU(MS & Flip) |
@@ -94,21 +94,23 @@ We offer the pre-trained weights on different RGBX datasets (Some weights are no
 | CFCI-Net (SegFormer) | MiT-B3 | 55.6% | |
 | CFCI-Net (SegFormer) | MiT-B4 | 56.4% | 56.6% |
 | CFCI-Net (SegFormer) | MiT-B5 | 56.9% | 57.3% |
-| CFCI-Net (SegFormer) | Swin-B | 56.9% | 57.1% |
-| CFCI-Net (SegFormer) | Swin-L | 56.9% | 57.6% |
+| CFCI-Net (Swin Transformer) | Swin-B | 56.9% | 57.1% |
+| CFCI-Net (Swin Transformer) | Swin-L | 56.9% | 57.6% |
 
 ### SUN RGB-D(37 categories)
 | Architecture | Backbone | mIOU(SS) |
 |:---:|:---:|:---:|
 | CFCI-Net (ResNet) | ResNet-101 | 50.8% |
 | CFCI-Net (SegFormer) | MiT-B2 | 51.6% |
-| CFCI-Net (SegFormer) | MiT-B4 | 52.7% |
+| CFCI-Net (SegFormer) | MiT-B3 | 52.7% |
 
 ### 2D-3D-S(13 categories)
 | Architecture | Backbone | mIOU(SS) |
 |:---:|:---:|:---:|
 | CFCI-Net (ResNet) | ResNet-101 | 61.2% |
 | CFCI-Net (SegFormer) | MiT-B2 | 62.6% |
+
+## Notice
 
 
 ## Publication
