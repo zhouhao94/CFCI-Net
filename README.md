@@ -65,9 +65,9 @@ For preparation of other datasets, please refer to the original websites:
 ### Train
 1. Pretrain weights:
 
-    Download the pre-trained segformer and swintransformer here [pretrained segformer](https://drive.google.com/drive/folders/10XgSW8f7ghRs9fJ0dE-EV8G2E_guVsT5?usp=sharing).(Thanks for CMX's sharing of backbone weights)
+    Download the pretrained segformer and swintransformer here [pretrained segformer](https://drive.google.com/drive/folders/10XgSW8f7ghRs9fJ0dE-EV8G2E_guVsT5?usp=sharing).(Thanks for CMX's sharing of backbone weights)
 
-   Organize the pre-trained backbones in the following structure:
+   Organize the pretrained backbones in the following structure:
     ```shell
     <pretrained>
     |-- <segformer>
@@ -128,7 +128,7 @@ We offer the test results of the proposed method on different RGBD datasets:
 | CFCI-Net (SegFormer) | MiT-B2 | 62.6% |
 
 ## Notice
-
+Due to a server failure, the original code for our project was lost. This repository provides a reproduced version, which omits some details and consequently shows slightly lower performance than the results reported in our paper.
 
 ## Publication
 If you find this repo useful, please consider referencing the following paper:
