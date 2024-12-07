@@ -1,29 +1,8 @@
-# RGBX_Semantic_Segmentation
-
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/cmx-cross-modal-fusion-for-rgb-x-semantic/semantic-segmentation-on-nyu-depth-v2)](https://paperswithcode.com/sota/semantic-segmentation-on-nyu-depth-v2?p=cmx-cross-modal-fusion-for-rgb-x-semantic)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/cmx-cross-modal-fusion-for-rgb-x-semantic/semantic-segmentation-on-sun-rgbd)](https://paperswithcode.com/sota/semantic-segmentation-on-sun-rgbd?p=cmx-cross-modal-fusion-for-rgb-x-semantic)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/cmx-cross-modal-fusion-for-rgb-x-semantic/semantic-segmentation-on-stanford2d3d-rgbd)](https://paperswithcode.com/sota/semantic-segmentation-on-stanford2d3d-rgbd?p=cmx-cross-modal-fusion-for-rgb-x-semantic)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/cmx-cross-modal-fusion-for-rgb-x-semantic/semantic-segmentation-on-scannetv2)](https://paperswithcode.com/sota/semantic-segmentation-on-scannetv2?p=cmx-cross-modal-fusion-for-rgb-x-semantic)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/cmx-cross-modal-fusion-for-rgb-x-semantic/semantic-segmentation-on-cityscapes-val)](https://paperswithcode.com/sota/semantic-segmentation-on-cityscapes-val?p=cmx-cross-modal-fusion-for-rgb-x-semantic)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/cmx-cross-modal-fusion-for-rgb-x-semantic/thermal-image-segmentation-on-mfn-dataset)](https://paperswithcode.com/sota/thermal-image-segmentation-on-mfn-dataset?p=cmx-cross-modal-fusion-for-rgb-x-semantic)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/cmx-cross-modal-fusion-for-rgb-x-semantic/semantic-segmentation-on-zju-rgb-p)](https://paperswithcode.com/sota/semantic-segmentation-on-zju-rgb-p?p=cmx-cross-modal-fusion-for-rgb-x-semantic)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/cmx-cross-modal-fusion-for-rgb-x-semantic/semantic-segmentation-on-eventscape)](https://paperswithcode.com/sota/semantic-segmentation-on-eventscape?p=cmx-cross-modal-fusion-for-rgb-x-semantic)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/cmx-cross-modal-fusion-for-rgb-x-semantic/semantic-segmentation-on-gamus)](https://paperswithcode.com/sota/semantic-segmentation-on-gamus?p=cmx-cross-modal-fusion-for-rgb-x-semantic)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/cmx-cross-modal-fusion-for-rgb-x-semantic/semantic-segmentation-on-selma)](https://paperswithcode.com/sota/semantic-segmentation-on-selma?p=cmx-cross-modal-fusion-for-rgb-x-semantic)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/cmx-cross-modal-fusion-for-rgb-x-semantic/thermal-image-segmentation-on-rt-5k)](https://paperswithcode.com/sota/thermal-image-segmentation-on-rt-5k?p=cmx-cross-modal-fusion-for-rgb-x-semantic)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/cmx-cross-modal-fusion-for-rgb-x-semantic/semantic-segmentation-on-kitti-360)](https://paperswithcode.com/sota/semantic-segmentation-on-kitti-360?p=cmx-cross-modal-fusion-for-rgb-x-semantic)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/cmx-cross-modal-fusion-for-rgb-x-semantic/semantic-segmentation-on-deliver)](https://paperswithcode.com/sota/semantic-segmentation-on-deliver?p=cmx-cross-modal-fusion-for-rgb-x-semantic)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/cmx-cross-modal-fusion-for-rgb-x-semantic/thermal-image-segmentation-on-rgb-t-glass)](https://paperswithcode.com/sota/thermal-image-segmentation-on-rgb-t-glass?p=cmx-cross-modal-fusion-for-rgb-x-semantic)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/cmx-cross-modal-fusion-for-rgb-x-semantic/semantic-segmentation-on-event-based)](https://paperswithcode.com/sota/semantic-segmentation-on-event-based?p=cmx-cross-modal-fusion-for-rgb-x-semantic)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/cmx-cross-modal-fusion-for-rgb-x-semantic/thermal-image-segmentation-on-kp-day-night)](https://paperswithcode.com/sota/thermal-image-segmentation-on-kp-day-night?p=cmx-cross-modal-fusion-for-rgb-x-semantic)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/cmx-cross-modal-fusion-for-rgb-x-semantic/multispectral-object-detection-on-flir-1)](https://paperswithcode.com/sota/multispectral-object-detection-on-flir-1?p=cmx-cross-modal-fusion-for-rgb-x-semantic)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/cmx-cross-modal-fusion-for-rgb-x-semantic/semantic-segmentation-on-llrgbd-synthetic)](https://paperswithcode.com/sota/semantic-segmentation-on-llrgbd-synthetic?p=cmx-cross-modal-fusion-for-rgb-x-semantic)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/cmx-cross-modal-fusion-for-rgb-x-semantic/thermal-image-segmentation-on-noisy-rs-rgb-t)](https://paperswithcode.com/sota/thermal-image-segmentation-on-noisy-rs-rgb-t?p=cmx-cross-modal-fusion-for-rgb-x-semantic)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/cmx-cross-modal-fusion-for-rgb-x-semantic/semantic-segmentation-on-uplight)](https://paperswithcode.com/sota/semantic-segmentation-on-uplight?p=cmx-cross-modal-fusion-for-rgb-x-semantic)
+# RGBD_Semantic_Segmentation
 
 ![Example segmentation](segmentation.jpg?raw=true "Example segmentation")
 
-The official implementation of **CMX: Cross-Modal Fusion for RGB-X Semantic Segmentation with Transformers (IEEE T-ITS 2023)**:
+The official implementation of **CFCI-Net: Cross-modality Feature Calibration and Integration Network for RGB-D Semantic Segmentation (IEEE T-IV 2024)**:
 More details can be found in our paper [[**PDF**](https://arxiv.org/pdf/2203.04838.pdf)].
 
 
@@ -34,13 +13,6 @@ More details can be found in our paper [[**PDF**](https://arxiv.org/pdf/2203.048
 - Python 3.7+
 - PyTorch 1.7.0 or higher
 - CUDA 10.2 or higher
-
-We have tested the following versions of OS and softwares:
-
-- OS: Ubuntu 18.04.6 LTS
-- CUDA: 10.2
-- PyTorch 1.8.2
-- Python 3.8.11
 
 2. Install all dependencies.
 Install pytorch, cuda and cudnn, then install other dependencies via:
@@ -85,10 +57,6 @@ For preparation of other datasets, please refer to the original websites:
 - [NYU Depth V2](https://cs.nyu.edu/~silberman/datasets/nyu_depth_v2.html)
 - [SUN-RGBD](https://rgbd.cs.princeton.edu/)
 - [ScanNetV2](http://www.scan-net.org/)
-- [RGB-T MFNet](https://github.com/haqishen/MFNet-pytorch)
-- [RGB-P ZJU](http://wangkaiwei.org/downloadeg.html)
-- [RGB-E EventScape](https://github.com/uzh-rpg/rpg_ramnet#eventscape)
-- [RGB-L KITTI-360](https://www.cvlibs.net/datasets/kitti-360/)
 
 ### Train
 1. Pretrain weights:
