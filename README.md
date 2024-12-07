@@ -30,7 +30,7 @@ Orgnize the dataset folder in the following structure:
         |-- <name1>.<ImageFormat>
         |-- <name2>.<ImageFormat>
         ...
-    |-- <ModalXFolder>
+    |-- <DepthFolder>
         |-- <name1>.<ModalXFormat>
         |-- <name2>.<ModalXFormat>
         ...
@@ -51,12 +51,12 @@ Orgnize the dataset folder in the following structure:
 ...
 ```
 
-For RGB-Depth semantic segmentation, the generation of HHA maps from Depth maps can refer to [https://github.com/charlesCXK/Depth2HHA-python](https://github.com/charlesCXK/Depth2HHA-python).
+Our work uses HHA format as the input of depth information; the generation of HHA maps from Depth maps can refer to [https://github.com/charlesCXK/Depth2HHA-python](https://github.com/charlesCXK/Depth2HHA-python).
 
 For preparation of other datasets, please refer to the original websites:
 - [NYU Depth V2](https://cs.nyu.edu/~silberman/datasets/nyu_depth_v2.html)
 - [SUN-RGBD](https://rgbd.cs.princeton.edu/)
-- [ScanNetV2](http://www.scan-net.org/)
+- [2D-3D-S](http://www.scan-net.org/)
 
 ### Train
 1. Pretrain weights:
@@ -87,40 +87,43 @@ If you want to use multi GPUs please specify multiple Device IDs (0,1,2...).
 We offer the pre-trained weights on different RGBX datasets (Some weights are not available yet. Due to the difference of training platforms, these weights may not be correctly loaded):
 
 ### NYU-V2(40 categories)
-| Architecture | Backbone | mIOU(SS) | mIOU(MS & Flip) | Weight |
-|:---:|:---:|:---:|:---:| :---:|
-| CMX (SegFormer) | MiT-B2 | 54.1% | 54.4% | [NYU-MiT-B2](https://drive.google.com/file/d/1hlyglGnEB0pnWXfHPtBtCGGlKMDh2K--/view?usp=sharing) |
-| CMX (SegFormer) | MiT-B4 | 56.0% | 56.3% |  |
-| CMX (SegFormer) | MiT-B5 | 56.8% | 56.9% |  |
-
-### MFNet(9 categories)
-| Architecture | Backbone | mIOU | Weight |
+| Architecture | Backbone | mIOU(SS) | mIOU(MS & Flip) |
 |:---:|:---:|:---:|:---:|
-| CMX (SegFormer) | MiT-B2 | 58.2% | [MFNet-MiT-B2](https://drive.google.com/file/d/1wtWxUgDk1N1QOhiGhUavBNc1_Bv9gzOM/view?usp=sharing) |
-| CMX (SegFormer) | MiT-B4 | 59.7% |  |
+| CFCI-Net (ResNet) | ResNet-101 | 53.5% | |
+| CFCI-Net (SegFormer) | MiT-B2 | 54.2% | |
+| CFCI-Net (SegFormer) | MiT-B3 | 55.6% | |
+| CFCI-Net (SegFormer) | MiT-B4 | 56.4% | 56.6% |
+| CFCI-Net (SegFormer) | MiT-B5 | 56.9% | 57.3% |
+| CFCI-Net (SegFormer) | Swin-B | 56.9% | 57.1% |
+| CFCI-Net (SegFormer) | Swin-L | 56.9% | 57.6% |
 
-### ScanNet-V2(20 categories)
-| Architecture | Backbone | mIOU | Weight |
-|:---:|:---:|:---:|:---:| 
-| CMX (SegFormer) | MiT-B2 | 61.3% | [ScanNet-MiT-B2](https://drive.google.com/file/d/1vWsG_wm5p6NSfCFmoWsCAuyWQh1m8dym/view?usp=sharing) |
+### SUN RGB-D(37 categories)
+| Architecture | Backbone | mIOU(SS) |
+|:---:|:---:|:---:|
+| CFCI-Net (ResNet) | ResNet-101 | 50.8% |
+| CFCI-Net (SegFormer) | MiT-B2 | 51.6% |
+| CFCI-Net (SegFormer) | MiT-B4 | 52.7% |
 
-### RGB-Event(20 categories)
-| Architecture | Backbone | mIOU | Weight |
-|:---:|:---:|:---:|:---:| 
-| CMX (SegFormer) | MiT-B4 | 64.28% | [RGBE-MiT-B4](https://drive.google.com/file/d/1UEnuzu6fwYTH1DROZ0hmzuboLGs5HdmQ/view?usp=sharing) |
+### 2D-3D-S(13 categories)
+| Architecture | Backbone | mIOU(SS) |
+|:---:|:---:|:---:|
+| CFCI-Net (ResNet) | ResNet-101 | 61.2% |
+| CFCI-Net (SegFormer) | MiT-B2 | 62.6% |
+
 
 ## Publication
 If you find this repo useful, please consider referencing the following paper:
 ```
-@article{zhang2023cmx,
-  title={CMX: Cross-modal fusion for RGB-X semantic segmentation with transformers},
-  author={Zhang, Jiaming and Liu, Huayao and Yang, Kailun and Hu, Xinxin and Liu, Ruiping and Stiefelhagen, Rainer},
-  journal={IEEE Transactions on Intelligent Transportation Systems},
-  year={2023}
+@article{zhou2024cfci,
+  title={CFCI-Net: Cross-modality Feature Calibration and Integration Network for RGB-D Semantic Segmentation},
+  author={Zhou, Hao and Yang, Xu and Qi, Lu and Chen, Haojie and Huang, Hai and Qin, Hongde},
+  journal={IEEE Transactions on Intelligent Vehicles},
+  year={2024},
+  publisher={IEEE}
 }
 ```
 
 ## Acknowledgement
 
-Our code is heavily based on [TorchSeg](https://github.com/ycszen/TorchSeg) and [SA-Gate](https://github.com/charlesCXK/RGBD_Semantic_Segmentation_PyTorch), thanks for their excellent work!
+Our code is heavily based on [CMX](https://github.com/huaaaliu/RGBX_Semantic_Segmentation) and [SA-Gate](https://github.com/charlesCXK/RGBD_Semantic_Segmentation_PyTorch), thanks for their brilliant work!
 
