@@ -3,7 +3,7 @@
 ![Example segmentation](segmentation.jpg?raw=true "Example segmentation")
 
 The official implementation of **CFCI-Net: Cross-modality Feature Calibration and Integration Network for RGB-D Semantic Segmentation (IEEE T-IV 2024)**:
-More details can be found in our paper [[**PDF**](https://arxiv.org/pdf/2203.04838.pdf)].
+More details can be found in our paper [[**paper**](https://ieeexplore.ieee.org/abstract/document/10634814)].
 
 
 ## Usage
