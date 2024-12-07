@@ -1,10 +1,11 @@
-# RGBD Semantic Segmentation Method
+# RGBD Semantic Segmentation Method CFCI-Net
 
 ![Framework](Framework.jpg?raw=true "framwork")
 
 The official implementation of **CFCI-Net: Cross-modality Feature Calibration and Integration Network for RGB-D Semantic Segmentation (IEEE T-IV 2024)**:
 More details can be found in our paper [[**paper**](https://ieeexplore.ieee.org/abstract/document/10634814)].
 
+![KeyModules](Key_modules.jpg?raw=true "key modules")
 
 ## Usage
 ### Installation
