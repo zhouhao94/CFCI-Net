@@ -7,6 +7,7 @@ More details can be found in our paper [[**paper**](https://ieeexplore.ieee.org/
 
 ![KeyModules](Key_modules.jpg?raw=true "key modules")
 
+The CFCI-Net consists of two key modules: **Global-local Feature Calibration Module** and **Base-shape Feature Integration Module**.
 ## Usage
 ### Installation
 1. Requirements
