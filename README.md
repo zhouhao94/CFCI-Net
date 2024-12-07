@@ -65,7 +65,20 @@ For preparation of other datasets, please refer to the original websites:
 ### Train
 1. Pretrain weights:
 
-    Download the pretrained segformer and swin transformer here [pretrained segformer](https://drive.google.com/drive/folders/10XgSW8f7ghRs9fJ0dE-EV8G2E_guVsT5?usp=sharing).(Thanks for CMX's sharing of backbone weights)
+    Download the pre-trained segformer and swintransformer here [pretrained segformer](https://drive.google.com/drive/folders/10XgSW8f7ghRs9fJ0dE-EV8G2E_guVsT5?usp=sharing).(Thanks for CMX's sharing of backbone weights)
+
+   Orgnize the pretrained backbones in the following structure:
+```shell
+<pretrained>
+|-- <segformer>
+    |-- <name1>.pth
+    |-- <name2>.pth
+    ...
+|-- <swintransformer>
+    |-- <name1>.pth
+    |-- <name2>.pth
+    ...
+```
 
 3. Config
 
@@ -98,8 +111,8 @@ We offer the test results of the proposed method on different RGBD datasets:
 | CFCI-Net (SegFormer) | MiT-B3 | 55.6% | |
 | CFCI-Net (SegFormer) | MiT-B4 | 56.4% | 56.6% |
 | CFCI-Net (SegFormer) | MiT-B5 | 56.9% | 57.3% |
-| CFCI-Net (Swin Transformer) | Swin-B | 56.9% | 57.1% |
-| CFCI-Net (Swin Transformer) | Swin-L | 56.9% | 57.6% |
+| CFCI-Net (SwinTransformer) | Swin-B | 56.9% | 57.1% |
+| CFCI-Net (SwinTransformer) | Swin-L | 56.9% | 57.6% |
 
 ### SUN RGB-D(37 categories)
 | Architecture | Backbone | mIOU(SS) |
